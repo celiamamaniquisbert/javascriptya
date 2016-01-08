@@ -1,0 +1,88 @@
+<html>
+<head>
+	
+</head>
+<body>
+<script type="text/javascript" src="js/funcionesFormularios.js">
+/*1 y 3.confeccionar un pagina que muestre un objeto con distintos tipos de pizzas(jamon y queso, muzzarella,morrones).Al selecionar una, mostrar en un objeto tipo TEXT el precio de la misma
+*/	
+/*2.Generar un presupuesto de un equipo de cumputacion a partir de tres objetos de tipo select que no permiten seleccionar:
+Procesador(Intel i3-$400,Intel I5 $600,Intel I7 $800)
+Para cada caracteristicas indicamos string a mostrar(Ej.Intel I3)y el valor asociando a dicho string(ej.400)
+/*4. Confeccionar una pagina que perimita tomar un examen multiple choice.Se debe mostrar una pregunta y seguidamente un objeto SELECT con las posibles.Al presionar un boton mostrar la cantidad de respuestas correstas e incorrectas(disponer y sus respectivos controlos)*/
+</script>
+
+<form>
+<select id="select1" onChange="cambiarPizza()">
+	<option value="23">Jamon y queso</option>
+	<option value="24">Muzzarella</option>
+	<option value="26">Morrones</option>
+	
+</select><br>
+El tipo de Pzza seleccionado:<input type="text" id="text2"><br>
+Cuyo precio es:<input type="text" id="text3"><br>
+Cantidad del producto elegido: <input type="text" id="cantidad" onchange="calcular()"><br>
+Importe:<input type="text" id="importe" ><br>	
+
+<select id="selectPro" >
+	<option value="400">Intel I3</option>
+	<option value="600">Intel I5</option>
+	<option value="800">Intel I7</option>
+</select>
+
+<select id="selectMon" >
+	<option value="250">Samsung 20'</option>
+	<option value="350">Samsung 22'</option>
+	<option value="550">Samsung 26'</option>	
+</select>
+
+
+<select id="selectDis" >
+	<option value="300">500 Gb</option>
+	<option value="440">1 Tb</option>
+	<option value="500">3 Tb</option>
+</select>	
+
+<input type="button" value="Calcular Presupuesto" onclick="calcularPres()"><br>
+El presupuesto es:<input type="text" id="presupuesto"><br>
+
+
+</form>
+<form>
+<br>PREGUNTAS:<br>
+1.Metrica de usabilidad de valor cualitativo:<br>
+
+<select id="selectP1">
+	<option value="0">eficacia</option>
+	<option value="0">eficiencia</option>
+	<option value="1">Satisfacion del usuario</option>	
+</select><br>
+2.Cual se las siguientes metodos es utilizado para determinar la usabilidad.<br>
+<select id="selectP2">
+	<option value="0">Las 10 heuristicas emocionales</option>
+	<option value="1">test de usuario</option>
+	<option value="0">Las panas</option>	
+</select><br>
+3.Cuantos usuarios son necesarios para la realizacion del test de usuario.<br>
+<select id="selectP3">
+	<option value="1">5</option>
+	<option value="0">8</option>
+	<option value="0">20</option>
+</select><br>
+4.El cuestionario de las 10 heuristicas emocionales para la obtencion de la experiencia de usuario se caracteria por ser:<br>
+<select id="selectP4">
+	<option value="0">experimental</option>
+	<option value="1">observacional</option>
+	<option value="0">relacional</option>
+</select><br>
+<br>
+<input type="button" value="calcular respuestas" onclick="calcularRespuestas()"><br>
+Nro de respuestas correstas:<input type="text" id="respCorrestas">
+<br>
+Nro de respuestas incorrectas:<input type="text" id="incorrectas">
+</form>
+
+
+
+</body>
+</html>

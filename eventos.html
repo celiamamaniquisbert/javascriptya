@@ -1,0 +1,60 @@
+<html>
+<head>
+	
+</head>
+<body onLoad="activarPrimerControl()">
+<script type="text/javascript" src="js/funcionesEventos.js"></script>
+EVENTOS DE ONFOCUS Y ONBLUR
+	<form>
+		<input type="text" id="nombre" onfocus="vaciar(this)" onblur="verificarEntrada(this)" value="nombre"><br>
+		<input type="text" id="edad" onfocus="vaciar(this)" onblur="verificarEntrada(this)" value="mail"><br>
+		<input type="button" value="Confirmar">
+
+	</form>
+
+	<form>
+		Ingrese nombre del usuario:
+		<input type="text" id="nombre1" onfocus="vaciar(this)" onblur="verificarEntrada(this)" value="nombre"><br>
+		Ingrese la contrasena:
+		<input type="password" id="contrasena"  onblur="verificarContrasena(this)" >
+		<input type="button" value="Confirmar"><br>
+		EVENTOS ONMOUSEOVER Y ONMOUSEOUT<br>
+	<a href="pagina.html" onMouseOver="pintar('#ff0000')" onMouseOut="pintar('#ffffff')">Rojo</a><br>
+	<a href="pagina.html" onmouseover="pintar('#00ff00')" onmouseout="pintar('#ffffff')">Verde</a><br>
+	<a href="pagina.html" onmouseover="pintar('#0000ff')" onmouseout="pintar('#ffffff')">Azul</a><br>
+	<table border="1">
+	<tr>
+		<td onMouseOver="pintar(this,'#ff0000')" onMouseOut="pintar(this,'#ffffff')">Rojo</td>
+		<td onMouseOver="pintar(this,'#00ff00')" onMouseOut="pintar(this,'#ffffff')">VErde</td>
+		<td onMouseOver="pintar(this,'#0000ff')" onMouseOut="pintar(this,'#ffffff')">Azul</td>
+	</tr>	
+	</table>
+	PROBLEMA.1<br>
+	Modificar el segundo problema resuelto(las casillas de la tabla<br>
+	 que cambian el color cuanndo ingresamos con el mouse)para<br>
+	  permitir llamar mediante hipervinculos a distintos programas que administran web-mail(gmail,hotmail y yahoo)
+	  <table border="1">
+	<tr>
+		<td onMouseOver="pintar(this,'#ff0000')" onMouseOut="pintar(this,'#ffffff')">
+			<a href="http://www.yahoo.com">Yahoo</a>
+		</td>
+		<td onMouseOver="pintar(this,'#00ff00')" onMouseOut="pintar(this,'#ffffff')">
+			<a href="http://www.hotmail.com">Hotmail</a>
+		</td>
+		<td onMouseOver="pintar(this,'#0000ff')" onMouseOut="pintar(this,'#ffffff')">
+			<a href="http://"www.gmail.com>Gmail</a>
+		</td>
+	</tr>	
+	</table>
+	EVENTO ONLOAD<br>
+	<form>
+		ingrese su nombre:
+		<input type="text" id="nombre1"><br>
+		Ingrese su edad:
+		<input type="text" id="edad"><br>
+		<input type="button" value="Confirmar">
+	</form>
+
+
+</body>
+</html>

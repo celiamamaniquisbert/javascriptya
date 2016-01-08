@@ -1,0 +1,52 @@
+<html>
+<head>
+	
+</head>
+<body>
+<script type="text/javascript" src="js/funcionesFormularios.js">
+	/*EJERCIO DE RADIO.
+	CONFECCIONAR UNA PAGINA QUE MUESTRE DOS OBJETOS DE LA CLASE RADIO SOLICITANDO QUE SELECCIONE SI ES EL MAYOR DE 18 A O NO.AL PRESIONAR UN BOTON MOSTRAR UN ALERT INDICANDO SI PUEDE INGRESAR AL SITIO O NO. */
+	/*EJERCICIO DE TEXTAREA
+	CONFECCIONAR  UN PAGINA DE VISITAS A UN SITIO, SOLICITAR INGRESAR EL NOMBRE DE UN A PERSONA Y SU MAIL Y LOS COMENTARIOS (TEXTAREA).MOSTRAR LUEGO LLAMANDO A LA  FUNCION ALERT LOS DATOS INGRESADOS*/
+
+</script>	
+<form>
+	<input type="checkbox" id="checkbox1">JavaScript<br>
+	<input type="checkbox" id="checkbox2">PHP<br>
+	<input type="checkbox" id="checkbox3">JSP<br>
+	<input type="checkbox" id="checkbox4">VB.Net<br>
+	<input type="button" value="Mostrar" onclick="contarSeleccionados()"><br>
+	Selecione los deportes que practica:<br>
+	<input type="checkbox" id="dep1">Basquet<br>
+	<input type="checkbox" id="dep2">Futbol<br>
+	<input type="checkbox" id="dep3">tenis<br>
+	<input type="button" value="mostrar deportes" onclick="mostrarDeportes()">
+</form>
+<form>
+	<input type="radio" id="radio1" name="estudios"> Sin estudios <br>
+	<input type="radio" id="radio2" name="estudios">Primarios<br>
+	<input type="radio" id="radio3" name="estudios">Secundarios<br>
+	<input type="radio" id="radio4" name="estudios">Universitarios<br>
+	<input type="button" value="Mostrar" onclick="mostrarSeleccionado()"><br>
+	 USTED ES MAYOR DE 18 A;OS<br>
+	 <input type="radio" id="radioS" name="mayor">Si<br>
+	 <input type="radio" id="radioN" name="mayor">NO<br>
+	 <input type="button" value="ok" onclick="mayorVerificar()">
+</form>
+<textarea id="curriculum" rows="10" cols="50"></textarea><br>
+<input type="button" value="Mostrar" onclick="controlarCaracteres()"><br>
+INGRESE EL NOMBRE:<input type="text" id="nom"><br>
+INGRESE EL MAIL:<input type="'text" id="mail"><br>
+INGRESE EL COMENTARIO:<br>
+<textarea id="comentario" rows="15"  cols="40"></textarea><br>
+
+<input type="button" value="mostrar" onclick="mostrarDatos()">
+
+
+<form>
+	
+
+</form>
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+<html>
+<head>
+	
+</head>
+<body>
+	<script type="text/javascript" src="js/funcionesVectoresObjeto.js"></script>
+	<script type="text/javascript">
+	 var vector=new Array(3);
+	 vector[0]= new Hipervinculo('http://www.google.com','google');
+	 vector[1]= new Hipervinculo('http://www.msn.com','msn');
+	 vector[2]= new Hipervinculo('http://www.yahoo','yahoo');
+
+	 for(var f=0;f<vector.length;f++){
+	 	document.write(vector[f].retornar());
+	 	document.write('<br>');
+	 }
+
+
+	</script>
+<!--PROBLEMA
+Confeccionar una clase persona que permita almacenar el nombre y la edad. Luego definir un vector de 4 componentes de tipo persona. Imprimir el nombre de la persona de mayor edad; decir también si hay más de una persona con la edad mayor.
+-->
+<script type="text/javascript">
+	var vector=new Array(4);
+	vector[0]=new Persona('Luis','23');
+	vector[1]=new Persona('Paco','21');
+	vector[2]=new Persona('hugo','24');
+	vector[3]=new Persona('Maria','24');
+	
+   var may=0;
+	for(var f=0;f<vector.length;f++){
+		if(vector[f].edad>=may){
+			may=vector[f].edad;
+		}
+	}
+	document.write('Las personas con mayor edad son:<br>');
+	for(var f=0;f<vector.length;f++){
+		if( may==vector[f].edad){
+				vector[f].imprimir();
+		}
+	
+	}
+
+
+
+
+
+</script>
+</body>
+
+</html>

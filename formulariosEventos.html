@@ -1,0 +1,61 @@
+<html>
+<head>
+	
+</head>
+<body>
+<script type="text/javascript" src="js/funcionesFormularios.js">
+	
+</script>
+
+<form>
+	<input type="button" onclick="incrementar()" value="incrementar">
+	
+
+	<input type="button" onclick="mensaje(1)" value="1">
+	<input type="button" onclick="mensaje(2)" value="2">
+	<input type="button" onclick="mensaje(3)" value="3">
+	<br>
+	INGRESE SU NOMBRE:
+	
+	<input type="text" id="nombre"><br>
+	INGRESE SU EDAD:
+	<input type="tet" id="edad"><br>
+	<input type="button" value="confirmar" onclick="mostrar()"><br>
+
+	INGRESE UN NUMERO
+	<input type="text" id="numero">
+	<input type="button" onclick="cubo()" value="volver al cubo"><br>
+
+	INGRESE EN PRIMER NUMERO :
+	<input type="text" id="num_a"><br>
+	INGRESE EL SEGUNDO NUMERO:
+	<input type="text" id="num_b"><br>
+
+	<input type="button" onclick="mayor()" value="mayor"><br>
+
+	NOMBRE:
+	<input type="text" id="nombre1">
+	APELLIDO:
+	<input type="text" id="apellido1"><br>
+	<input type="button" onclick="concatenar()" value="mostrar"><br>
+	<input type="text" id="mostrar_a" ><br>
+	INGRESE UNA CLAVE:
+	<input type="password" id="clave"><br>
+	CONFIRMAR CLAVE:
+	<input type="password" id="clave1"><br>
+	<input type="button" value="Confirmar" onclick="verificar()"><br>
+
+	<select id="select1" onchange="cambiarColor()">
+		<option value="0xff0000">Rojo</option>
+		<option value="0x00ff00">Verde</option>
+		<option value="0x0000ff">Azul</option>
+		
+	</select><br>
+	Numero de indice seleccionado del objeto SELECT:<input type="text" id="text1"><br>
+	Texto seleccionado:<input type="text" id="text2"><br>
+	 Valor asociado:<input type="text" id="text3"><br>
+
+</form>
+	
+</body>
+</html>

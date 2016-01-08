@@ -1,0 +1,54 @@
+<html>
+<head>
+	
+</head>
+<body onload="verificar()">
+<script type="text/javascript" src="js/funcionesObjWindow.js"></script>	
+OBJETO WINDOW<br>
+Este programa permite analizar la llamada a distintas responsabilidades del objeto window<br>
+<form>
+	<br>
+	<input type="button" value="open()" onclick="abrir()"><br>
+	<input type="button" value="open con parametros()" onclick="abrirParametros()"><br>
+	<input type="button" value="alert" onclick="mostrarAlerta()"><br>
+	<input type="button" value="confirm" onclick="confirmar()"><br>
+	<input type="button" value="promt" onclick="cargarCadena()"><br>
+	<input type="button" value="problenma" onclick="abrirVentana()"><br>
+</form>
+PROPIEDAD LOCATION DEL OBJETO WINDOW<br>
+<a href="javascript:verificarEntrada()">Ingresar a la Nacion</a><br>
+PROBLEMA 1.<br>
+Confeccionar una pagina que tenga un hipervinvulo.Cuando se presione dicho hipervinculo generaar un valor aleatorio entre 0 y 2.Si se genera el 0 llamar al webmail de hotmail,si se genera un 1 llamar a gmail, en caso de generar un valor de 2 llamar a yahoo.Paar generar  un valor aeatorio utilizar la funcion random del objeto Math.<br>
+<a href="javascript:crearHipervinculo()">ingresa al mail aleatorio</a><br>
+PROPIEDAD HISTORY DEL OBJETO WINDOW<br>
+window.history.back() // retrocede a la pagina anterior.<br>
+window.history.forward(); //avanza a la pagina siguiente almacenda en la cache de la maquina.<br>
+window.history.go(); //Avanza o retrocede en la lista de paginas visitadas.<br>
+<a href="pagina2.html">Ir a la pagina 2</a><br>
+<a href="javascript:avanzar()">Extraer del cache la segundaa pagina</a><br>
+<br>
+PROPIEDAD SCREEN DEL OBJETO WINDOW<br>
+
+
+<script type="text/javascript">
+	document.write('valores de las propiedades del objeto screen:<br> ');
+	document.write('availHeight:'+screen.availHeight+'<br>');
+	document.write('availWidth'+ screen.availWidth+'<br>');
+	document.write('height:'+screen.height+'<br>');
+	document.write('width:'+screen.width+'<br>');
+	document.write('colorDepth:'+screen.colorDepth+'<br>');
+</script>
+<form>
+	<input type="button" value="abrir ventana" onclick="abrirVentana2()"><br>
+</form>
+PROPIEDAD NAVIGATOR DEL OBJETO WINDOW
+<script type="text/javascript">
+	document.write('Valores de las propiedades del objeto navigator:<br>');
+	document.write('appName:'+navigator.appName+'<br>');
+	document.write('appVersion:'+navigator.appVersion+'<br>');
+	document.write('cookieEnabled:'+navigator.cookieEnabled+'<br>');
+	document.write('plugins:'+navigator.plugins.length+'<br>');
+</script>
+
+</body>
+</html>
