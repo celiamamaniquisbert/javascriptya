@@ -1,7 +1,7 @@
 var cargar2=function() {
-	var cont=0;
-	var y=1;
-	var vector=new Array();
+	var cont = 0;
+	var y = 1;
+	var vector = new Array();
 	var longitudPalabra,primerLetra,demasLetras;
 	while(cont<=y){
 		var palabra;
