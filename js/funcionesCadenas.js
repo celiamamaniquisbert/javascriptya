@@ -1,5 +1,4 @@
- var cargar2=function()
-{
+var cargar2=function() {
 	var cont=0;
 	var y=1;
 	var vector=new Array();
